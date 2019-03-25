@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<title>hitrekkers</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/post.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/post_responsive.css' %}">
+</head>
+<body>
+<div class="super_container">
+<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="logo"><a href="{% url 'HomePage' %}">hitrekkers</a></div>
+						<nav class="main_nav" style="margin-left: 280px;">
+							<ul>
+								<li class="active"><a href="{% url 'HomePage' %}" style="font-size: 16px;">Home</a></li>
+								<li class="active"><a href="{% url 'Recommendation' %}" style="font-size: 16px;">Recommendation</a></li>
+								<li class="active"><a href="#" style="font-size: 16px;">Destinations</a></li>
+							</ul>
+						</nav>
+						<div class="hamburger ml-auto menu_mm">
+							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Menu -->
+	<!-- Home -->
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/kk.jpg' %}" data-speed="0.8"></div>
+		<div class="home_content">
+			<div class="post_category trans_200"><a href="category.html" class="trans_200" style="border: 1px solid white; border-radius: 14px;">Trekking</a></div>
+			<div class="post_title">Search Your Favourite Trekking Destination</div>
+		</div>
+	</div>
+	<!-- Page Content -->
+	<div class="page_content">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				<!-- Post Content -->
+				<div class="col-lg-1">
+				</div>
+				<div class="col-lg-10">
+					<div class="post_content">
+						<!-- Top Panel -->
+						<div class="post_panel post_panel_top d-flex flex-row align-items-center justify-content-start">
+							<div class="post_share ml-sm-auto">
+								<span style="color: black;">share</span>
+								<ul class="post_share_list">
+									<li class="post_share_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li class="post_share_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li class="post_share_item"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Post Body -->
+						<div class="post_body" style="color:black; text-align:justify">
+						<div class="card card_small_with_image grid-item" style="border: 1px solid #9D9C9C; border-radius: 0px;">
+										<img class="card-img-top" src="/media/img/" alt="">
+										<div class="card-body">
+											<div class="card-title card-title-small"><a href="">mustang</a></div>
+										</div>
+                        </div>
+						</div>			
+					</div>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/masonry/masonry.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/post.js' %}"></script>
+</body>
+</html>
